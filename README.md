@@ -60,7 +60,7 @@ Nous avons utilisé une version pré-entraînée de BERT, que nous avons fine-tu
 ### Optimisation avec DistilBERT  
 BERT étant un modèle lourd en calcul, nous avons également testé **DistilBERT**, une version optimisée et plus légère, qui conserve une grande partie des performances de BERT tout en réduisant le temps d'entraînement et l'utilisation des ressources. Cette approche nous permet d'obtenir un bon équilibre entre **précision** et **efficacité computationnelle**.  
 
-Grâce à BERT et DistilBERT, notre modèle est capable de mieux comprendre le **sens global des commentaires**, améliorant ainsi la détection des propos toxiques de manière plus fiable et contextuelle.
+Grâce à BERT et DistilBERT, notre modèle est capable de mieux comprendre le sens global des commentaires, améliorant ainsi la détection des propos toxiques de manière plus fiable et contextuelle.
 
-Attention, suite à des problèmes avec collab (limite atteinte, nous n'avons pas pu l'entrainer longtemps mais nous avons eu de bon résultat avant d'atteindre cette limite)
+
 
