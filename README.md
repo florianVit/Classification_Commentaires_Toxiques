@@ -51,3 +51,16 @@ Ce README sert de mise en bouche pour avoir une idée des étapes suivies durant
 
 ## 5. BERT
 
+### Choix du Modèle: BERT  
+Après avoir testé Random Forest, nous avons décidé d'explorer **BERT** (Bidirectional Encoder Representations from Transformers), un modèle de traitement du langage naturel basé sur l'architecture Transformer.
+
+### Entraînement du Modèle BERT  
+Nous avons utilisé une version pré-entraînée de BERT, que nous avons fine-tuné sur notre jeu de données. Contrairement à Random Forest, l'entraînement de BERT nécessite des ressources plus importantes (notamment un GPU) et un temps d'entraînement plus long. Cependant, il permet d'obtenir des performances nettement supérieures en termes de compréhension du langage et de précision des prédictions.  
+
+### Optimisation avec DistilBERT  
+BERT étant un modèle lourd en calcul, nous avons également testé **DistilBERT**, une version optimisée et plus légère, qui conserve une grande partie des performances de BERT tout en réduisant le temps d'entraînement et l'utilisation des ressources. Cette approche nous permet d'obtenir un bon équilibre entre **précision** et **efficacité computationnelle**.  
+
+Grâce à BERT et DistilBERT, notre modèle est capable de mieux comprendre le **sens global des commentaires**, améliorant ainsi la détection des propos toxiques de manière plus fiable et contextuelle.
+
+Attention, suite à des problèmes avec collab (limite atteinte, nous n'avons pas pu l'entrainer longtemps mais nous avons eu de bon résultat avant d'atteindre cette limite)
+
